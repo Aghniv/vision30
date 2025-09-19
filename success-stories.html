@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories - Vision 30</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Gallery/logo.svg" alt="Vision 30 Logo" class="logo-img">
+                <span class="logo-text">Vision 30</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="success-stories.html" class="nav-link active">Success Stories</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="apply.html" class="nav-cta">Apply Now</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Success Stories</h1>
+                    <p class="page-subtitle">
+                        Inspiring journeys of Vision 30 students who are breaking barriers and achieving excellence in STEM
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Stories -->
+        <section class="student-stories">
+            <div class="container">
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="student1.jpg" alt="Arjun Sharma">
+                        </div>
+                        <div class="story-content">
+                            <h3 class="story-name">Arjun Sharma</h3>
+                            <p class="story-program">Computer Science, IIT Delhi</p>
+                            <p class="story-quote">
+                                "Vision 30 didn't just teach me programming; it taught me to dream beyond limitations. 
+                                Today, I'm developing AI solutions for accessibility."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="student2.jpg" alt="Priya Patel">
+                        </div>
+                        <div class="story-content">
+                            <h3 class="story-name">Priya Patel</h3>
+                            <p class="story-program">Mathematics, Indian Statistical Institute</p>
+                            <p class="story-quote">
+                                "The mentorship program connected me with mathematicians who showed me that 
+                                vision is about seeing possibilities, not just with eyes."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-image">
+                            <img src="student3.jpg" alt="Rahul Kumar">
+                        </div>
+                        <div class="story-content">
+                            <h3 class="story-name">Rahul Kumar</h3>
+                            <p class="story-program">Physics, IISC Bangalore</p>
+                            <p class="story-quote">
+                                "Vision 30 gave me the confidence to pursue astrophysics. Now I'm researching 
+                                black holes and expanding our understanding of the universe."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="stories-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Your Success Story Starts Here</h2>
+                    <p class="cta-description">
+                        Join Vision 30 and become part of a community of achievers who are shaping the future of STEM.
+                    </p>
+                    <a href="apply.html" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Gallery/logo.svg" alt="Vision 30" class="footer-logo-img">
+                        <span class="footer-logo-text">Vision 30</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering blind and low-vision students to excel in STEM fields.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Vision 30. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI-Powered Chatbot Widget -->
+    <div class="ai-chatbot-widget" id="ai-chatbot-widget" aria-live="polite">
+        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Chat about Vision 30 success stories and opportunities">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <span class="sr-only">Chat with Vision 30 AI Assistant</span>
+        </button>
+        
+        <div class="chatbot-container" id="chatbot-container" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true">
+            <div class="chatbot-header">
+                <h3 id="chatbot-title" class="chatbot-title">
+                    <i class="fas fa-robot" aria-hidden="true"></i>
+                    Vision 30 AI Assistant
+                </h3>
+                <div class="chatbot-status" id="chatbot-status">
+                    <span class="status-indicator online" aria-label="AI assistant is online"></span>
+                    <span class="status-text">Online</span>
+                </div>
+                <button class="chatbot-close" id="chatbot-close" aria-label="Close AI chatbot">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite" aria-label="Chat conversation with AI assistant">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Inspired by our success stories? I can help you understand how Vision 30 can launch your own journey to STEM excellence! What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-quick-actions">
+                <button class="quick-action-btn" data-action="apply" aria-label="Ask about joining Vision 30">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    Join Vision 30
+                </button>
+                <button class="quick-action-btn" data-action="tracks" aria-label="Ask about programs">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                    Programs
+                </button>
+                <button class="quick-action-btn" data-action="eligibility" aria-label="Ask about eligibility">
+                    <i class="fas fa-check-circle" aria-hidden="true"></i>
+                    Eligibility
+                </button>
+                <button class="quick-action-btn" data-action="accessibility" aria-label="Ask about support">
+                    <i class="fas fa-heart" aria-hidden="true"></i>
+                    Support
+                </button>
+            </div>
+            
+            <div class="chatbot-input-area">
+                <label for="chatbot-input" class="sr-only">Type your question about success opportunities</label>
+                <input 
+                    type="text" 
+                    id="chatbot-input" 
+                    class="chatbot-input" 
+                    placeholder="Ask about your journey to success..."
+                    aria-describedby="chatbot-help-text"
+                    maxlength="500"
+                >
+                <button class="chatbot-send" id="chatbot-send" aria-label="Send message to AI assistant" disabled>
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+                <div id="chatbot-help-text" class="sr-only">
+                    Press Enter to send message or use the send button. Learn about success opportunities.
+                </div>
+            </div>
+            
+            <div class="chatbot-footer">
+                <span class="powered-by">Powered by AI • <a href="#" class="privacy-link">Privacy Policy</a></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- Hero illustration placeholder -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGradient)"/>
+  
+  <!-- Students studying -->
+  <circle cx="150" cy="200" r="40" fill="#4285f4" opacity="0.8"/>
+  <circle cx="300" cy="180" r="35" fill="#34a853" opacity="0.8"/>
+  <circle cx="450" cy="210" r="38" fill="#fbbc04" opacity="0.8"/>
+  
+  <!-- Books/Learning materials -->
+  <rect x="100" y="250" width="60" height="40" fill="#4285f4" opacity="0.6" rx="5"/>
+  <rect x="260" y="230" width="50" height="35" fill="#34a853" opacity="0.6" rx="5"/>
+  <rect x="410" y="260" width="55" height="38" fill="#fbbc04" opacity="0.6" rx="5"/>
+  
+  <!-- Connection lines -->
+  <line x1="150" y1="200" x2="300" y2="180" stroke="#4285f4" stroke-width="2" opacity="0.5"/>
+  <line x1="300" y1="180" x2="450" y2="210" stroke="#4285f4" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Text elements -->
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#4285f4">STEM Excellence</text>
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#5f6368">Collaborative Learning</text>
+</svg>
