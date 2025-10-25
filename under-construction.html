@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Vision 30</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .construction-icon {
+            text-align: center;
+            margin: 2rem 0;
+            color: #4285f4;
+        }
+        
+        .construction-message {
+            padding: 3rem 0;
+        }
+        
+        .message-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .message-title {
+            color: #202124;
+            margin-bottom: 1rem;
+        }
+        
+        .message-description {
+            color: #5f6368;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .progress-indicator {
+            margin: 2rem 0;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #e8eaed;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, #4285f4, #34a853);
+            border-radius: 5px;
+            animation: progressAnimation 2s ease-in-out infinite alternate;
+        }
+        
+        .progress-text {
+            color: #5f6368;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes progressAnimation {
+            0% { width: 40%; }
+            100% { width: 80%; }
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="Gallery/v30logo.png" alt="Vision 30 Logo" class="logo-img">
+                <span class="logo-text"></span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="gallery.html" class="nav-link">Events</a>
+                <a href="under-construction.html" class="nav-link active">Resources</a>
+                
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Resources Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Resources</h1>
+                    <p class="page-subtitle">
+                        This page is currently being updated and will be available soon.
+                    </p>
+                    <div class="construction-icon">
+                        <i class="fas fa-hard-hat fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Message -->
+        <section class="construction-message">
+            <div class="container">
+                <div class="message-content">
+                    <h2 class="message-title">We're Working on Something Great!</h2>
+                    <p class="message-description">
+                        Our team is currently updating this section to provide you with the best possible experience. 
+                        Please check back soon for exciting new content and resources.
+                    </p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p class="progress-text">Work in progress...</p>
+                    </div>
+                    <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="Gallery/v30logo.png" alt="Vision 30" class="footer-logo-img">
+                        <span class="footer-logo-text">Vision 30</span>
+                    </div>
+                    <p class="footer-description">
+                        Empowering blind and low-vision students to excel in STEM fields.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Vision 30. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
