@@ -861,6 +861,7 @@ section {
         padding-top: var(--spacing-2xl);
         transition: var(--transition-base);
         box-shadow: 0 2px 10px var(--shadow-medium);
+        gap: 1.5rem;
     }
 
     .nav-menu.active {
@@ -884,8 +885,22 @@ section {
     }
 
     .logo-img {
-        height: 45px;
-        width: 45px;
+        height: 50px;
+        width: auto;
+        max-width: 200px;
+        object-fit: contain;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        background: var(--light-bg);
+        transform: translateY(-2px);
     }
 
     .hero .container {
@@ -7934,6 +7949,7 @@ body.aos-animate .learning-card:not(.revealed) {
     align-items: center;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     overflow: hidden;
+    padding: 2rem 0;
 }
 
 .event-hero-background {
@@ -8074,15 +8090,15 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* Problem Statement Section */
 .problem-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--light-bg);
 }
 
 .problem-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2.5rem;
+    margin-top: 4rem;
 }
 
 .problem-card {
@@ -8126,16 +8142,16 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* Solution Section */
 .solution-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--white);
 }
 
 .solution-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 5rem;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .solution-text h3 {
@@ -8204,7 +8220,7 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* Agenda Section */
 .agenda-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--light-bg);
 }
 
@@ -8289,15 +8305,15 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* Implementation Section */
 .implementation-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: var(--white);
 }
 
 .implementation-steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 2.5rem;
+    margin-top: 4rem;
 }
 
 .step-card {
@@ -8529,7 +8545,7 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* CTA Section */
 .cta-section {
-    padding: 6rem 0;
+    padding: 8rem 0;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     text-align: center;
     color: var(--white);
@@ -8560,43 +8576,90 @@ body.aos-animate .learning-card:not(.revealed) {
 
 /* Responsive Design for Event Page */
 @media (max-width: 768px) {
+    .event-hero {
+        padding: 1rem 0;
+        min-height: 80vh;
+    }
+    
     .event-title {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .event-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
     
     .event-details-card {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .problem-section,
+    .solution-section,
+    .agenda-section,
+    .implementation-section,
+    .cta-section {
+        padding: 4rem 0;
+    }
+    
+    .problem-grid,
+    .implementation-steps {
+        gap: 1.5rem;
+        margin-top: 2rem;
     }
     
     .solution-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .agenda-day {
+        padding: 2rem;
+        margin-bottom: 2rem;
     }
     
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 1rem;
     }
     
     .timeline-visual {
         flex-direction: column;
+        gap: 1rem;
     }
     
     .timeline-arrow {
         transform: rotate(90deg);
     }
     
-    .implementation-steps {
-        grid-template-columns: 1fr;
-    }
-    
     .support-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-description {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 300px;
     }
 }
