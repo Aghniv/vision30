@@ -7,7 +7,134 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+    /* Under Construction Page Styles */
+.under-construction-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 80px 20px;
+}
+
+.construction-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.construction-content {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.construction-icon {
+    color: #4a90e2;
+    margin-bottom: 30px;
+}
+
+.construction-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.construction-message {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.preview-item {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: translateY(-5px);
+}
+
+.preview-item i {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 15px;
+}
+
+.preview-item h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.notification-form {
+    margin-top: 60px;
+}
+
+.notification-form h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.form-group {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #e1e8ed;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #357abd;
+}
+
+@media (max-width: 768px) {
+    .construction-content {
+        padding: 40px 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
+</style>
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -17,13 +144,12 @@
                 <span class="logo-text"></span>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
+                <a href="#home" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="gallery.html" class="nav-link">Events</a>
                 <a href="resources.html" class="nav-link active">Resources</a>
-                <a href="event-25-26.html" class="nav-link">Upcoming-Events</a>
+                <a href="event-25-26.html" class="nav-link ">Upcoming-Events</a>
                 <a href="contact.html" class="nav-link">Contact</a>
-                <a href="apply.html" class="nav-cta">Apply Now</a>
             </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
@@ -33,307 +159,57 @@
         </div>
     </nav>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="page-hero-content">
-                    <h1 class="page-title">Resources</h1>
-                    <p class="page-subtitle">
-                        Comprehensive learning materials and tools to support your STEM education journey
-                    </p>
+    <main class="under-construction-page">
+        <div class="construction-container">
+            <div class="construction-content" data-aos="fade-up">
+                <div class="construction-icon">
+                    <i class="fas fa-tools fa-4x"></i>
                 </div>
-            </div>
-        </section>
-
-        <!-- Featured Resources Section -->
-        <section class="featured-resources">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Vision 30 Learning Resources</h2>
-                    <p class="section-subtitle">
-                        Curated materials designed specifically for our STEM excellence program
-                    </p>
-                </div>
-                <div class="featured-grid">
-                    <div class="featured-card">
-                        <div class="featured-icon">
+                <h1 class="construction-title">Resources Coming Soon</h1>
+                <p class="construction-message">
+                    We're working hard to bring you comprehensive STEM learning resources. 
+                    Our team is curating high-quality content to support your educational journey.
+                </p>
+                <div class="feature-preview">
+                    <h2>What to Expect</h2>
+                    <div class="preview-grid">
+                        <div class="preview-item" data-aos="fade-up" data-aos-delay="100">
                             <i class="fas fa-graduation-cap"></i>
+                            <h3>STEM Curriculum</h3>
                         </div>
-                        <h3 class="featured-title">STEM Excellence Curriculum</h3>
-                        <p class="featured-description">
-                            Comprehensive coursework materials for mathematics, physics, chemistry, and computer science designed for Vision 30 students.
-                        </p>
-                        <a href="#stem-curriculum" class="featured-link">Explore Curriculum</a>
-                    </div>
-                    <div class="featured-card">
-                        <div class="featured-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3 class="featured-title">Assistive Technology Suite</h3>
-                        <p class="featured-description">
-                            Complete guide to screen readers, braille displays, scientific computing tools, and programming environments.
-                        </p>
-                        <a href="#assistive-tech" class="featured-link">Access Tools</a>
-                    </div>
-                    <div class="featured-card">
-                        <div class="featured-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="featured-title">Mentorship Hub</h3>
-                        <p class="featured-description">
-                            Connect with industry professionals, alumni, and peer mentors who guide you through your STEM journey.
-                        </p>
-                        <a href="#mentorship" class="featured-link">Find Mentors</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Resources Grid -->
-        <section class="resources-section">
-            <div class="container">
-                <div class="resources-grid">
-                    <div class="resource-category" id="assistive-tech">
-                        <div class="category-icon">
+                        <div class="preview-item" data-aos="fade-up" data-aos-delay="200">
                             <i class="fas fa-universal-access"></i>
+                            <h3>Assistive Technology</h3>
                         </div>
-                        <h3 class="category-title">Assistive Technology</h3>
-                        <p class="category-description">Essential tools for accessing and creating STEM content</p>
-                        <ul class="resource-list">
-                            <li><a href="#">NVDA Screen Reader - Advanced Configuration</a></li>
-                            <li><a href="#">JAWS Screen Reader - STEM Extensions</a></li>
-                            <li><a href="#">MathPlayer - Mathematical Expression Reading</a></li>
-                            <li><a href="#">Braille Display Setup and Usage</a></li>
-                            <li><a href="#">Lambda Mathematical Notation</a></li>
-                            <li><a href="#">Accessible Graphing Tools</a></li>
-                            <li><a href="#">Voice Recognition Software</a></li>
-                            <li><a href="#">Magnification Software Configuration</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-category" id="stem-curriculum">
-                        <div class="category-icon">
-                            <i class="fas fa-book-open"></i>
+                        <div class="preview-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-users"></i>
+                            <h3>Mentorship Hub</h3>
                         </div>
-                        <h3 class="category-title">STEM Curriculum</h3>
-                        <p class="category-description">Specialized learning materials for Vision 30 students</p>
-                        <ul class="resource-list">
-                            <li><a href="#">Advanced Mathematics - Calculus & Beyond</a></li>
-                            <li><a href="#">Physics - Theoretical and Applied Concepts</a></li>
-                            <li><a href="#">Chemistry - Molecular Structures & Reactions</a></li>
-                            <li><a href="#">Computer Science - Algorithms & Data Structures</a></li>
-                            <li><a href="#">Research Methodology for STEM</a></li>
-                            <li><a href="#">Scientific Writing and Documentation</a></li>
-                            <li><a href="#">Competitive Exam Preparation (JEE, NEET)</a></li>
-                            <li><a href="#">University Entrance Preparation</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-category">
-                        <div class="category-icon">
-                            <i class="fas fa-code"></i>
+                        <div class="preview-item" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-book-reader"></i>
+                            <h3>Digital Library</h3>
                         </div>
-                        <h3 class="category-title">Programming & Technology</h3>
-                        <p class="category-description">Hands-on coding and technology resources</p>
-                        <ul class="resource-list">
-                            <li><a href="#">Python Programming - From Basics to Advanced</a></li>
-                            <li><a href="#">Java Development - Object-Oriented Programming</a></li>
-                            <li><a href="#">Web Development - Accessible Design</a></li>
-                            <li><a href="#">Data Science and Analytics</a></li>
-                            <li><a href="#">Machine Learning Fundamentals</a></li>
-                            <li><a href="#">Database Management Systems</a></li>
-                            <li><a href="#">Version Control with Git</a></li>
-                            <li><a href="#">Accessible Development Practices</a></li>
-                        </ul>
                     </div>
-                    
-                    <div class="resource-category">
-                        <div class="category-icon">
-                            <i class="fas fa-microscope"></i>
+                </div>
+                <div class="notification-form" data-aos="fade-up" data-aos-delay="500">
+                    <h3>Get Notified When We Launch</h3>
+                    <form id="notify-form">
+                        <div class="form-group">
+                            <input type="email" id="notify-email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Notify Me</button>
                         </div>
-                        <h3 class="category-title">Research & Innovation</h3>
-                        <p class="category-description">Tools and guides for scientific research</p>
-                        <ul class="resource-list">
-                            <li><a href="#">Research Project Templates</a></li>
-                            <li><a href="#">Scientific Paper Writing Guide</a></li>
-                            <li><a href="#">Data Analysis Tools and Techniques</a></li>
-                            <li><a href="#">Laboratory Safety Protocols</a></li>
-                            <li><a href="#">Accessible Scientific Instruments</a></li>
-                            <li><a href="#">Patent Application Process</a></li>
-                            <li><a href="#">Innovation and Entrepreneurship</a></li>
-                            <li><a href="#">Collaboration Tools for Research</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="resource-category">
-                        <div class="category-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h3 class="category-title">Career Development</h3>
-                        <p class="category-description">Professional growth and career preparation</p>
-                        <ul class="resource-list">
-                            <li><a href="#">Resume Building for STEM Careers</a></li>
-                            <li><a href="#">Interview Preparation and Tips</a></li>
-                            <li><a href="#">Industry Networking Guidelines</a></li>
-                            <li><a href="#">Internship Application Process</a></li>
-                            <li><a href="#">Professional Communication Skills</a></li>
-                            <li><a href="#">Leadership Development Program</a></li>
-                            <li><a href="#">Workplace Accessibility Advocacy</a></li>
-                            <li><a href="#">Entrepreneurship and Startup Guide</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="resource-category" id="mentorship">
-                        <div class="category-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3 class="category-title">Mentorship & Support</h3>
-                        <p class="category-description">Connect with mentors and peer support networks</p>
-                        <ul class="resource-list">
-                            <li><a href="#">Industry Mentor Directory</a></li>
-                            <li><a href="#">Alumni Success Network</a></li>
-                            <li><a href="#">Peer Study Groups</a></li>
-                            <li><a href="#">Counseling and Mental Health Support</a></li>
-                            <li><a href="#">Academic Advisor Meetings</a></li>
-                            <li><a href="#">One-on-One Mentorship Sessions</a></li>
-                            <li><a href="#">Group Workshops and Seminars</a></li>
-                            <li><a href="#">24/7 Technical Support Helpline</a></li>
-                        </ul>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section>
-
-        <!-- Digital Library Section -->
-        <section class="digital-library">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Vision 30 Digital Library</h2>
-                    <p class="section-subtitle">
-                        Accessible textbooks, research papers, and multimedia content
-                    </p>
-                </div>
-                <div class="library-grid">
-                    <div class="library-section">
-                        <div class="library-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <h3 class="library-title">Accessible Textbooks</h3>
-                        <p class="library-description">Digital textbooks in multiple formats including Braille, audio, and large print.</p>
-                        <div class="library-stats">
-                            <span class="stat">500+ Books</span>
-                            <span class="stat">15 Subjects</span>
-                        </div>
-                    </div>
-                    <div class="library-section">
-                        <div class="library-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <h3 class="library-title">Research Papers</h3>
-                        <p class="library-description">Curated collection of STEM research papers and academic journals.</p>
-                        <div class="library-stats">
-                            <span class="stat">2000+ Papers</span>
-                            <span class="stat">50+ Journals</span>
-                        </div>
-                    </div>
-                    <div class="library-section">
-                        <div class="library-icon">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <h3 class="library-title">Video Lectures</h3>
-                        <p class="library-description">Audio-described video lectures from top universities and institutions.</p>
-                        <div class="library-stats">
-                            <span class="stat">300+ Videos</span>
-                            <span class="stat">20+ Courses</span>
-                        </div>
-                    </div>
-                    <div class="library-section">
-                        <div class="library-icon">
-                            <i class="fas fa-headphones"></i>
-                        </div>
-                        <h3 class="library-title">Audio Resources</h3>
-                        <p class="library-description">Podcasts, audiobooks, and narrated educational content.</p>
-                        <div class="library-stats">
-                            <span class="stat">1000+ Hours</span>
-                            <span class="stat">25+ Topics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Access Tools -->
-        <section class="quick-access">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Quick Access Tools</h2>
-                    <p class="section-subtitle">
-                        Essential tools and calculators for daily STEM work
-                    </p>
-                </div>
-                <div class="tools-grid">
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <h3 class="tool-title">Scientific Calculator</h3>
-                        <p class="tool-description">Screen reader compatible advanced calculator</p>
-                        <a href="#" class="tool-link">Open Calculator</a>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="tool-title">Graphing Tool</h3>
-                        <p class="tool-description">Accessible function plotting and analysis</p>
-                        <a href="#" class="tool-link">Create Graphs</a>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-table"></i>
-                        </div>
-                        <h3 class="tool-title">Data Tables</h3>
-                        <p class="tool-description">Accessible spreadsheet and data analysis</p>
-                        <a href="#" class="tool-link">Open Tables</a>
-                    </div>
-                    <div class="tool-card">
-                        <div class="tool-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="tool-title">Code Editor</h3>
-                        <p class="tool-description">Screen reader optimized programming environment</p>
-                        <a href="#" class="tool-link">Start Coding</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="resources-cta">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready to Excel in STEM?</h2>
-                    <p class="cta-description">
-                        Join Vision 30 and access our comprehensive suite of resources designed specifically for blind and low-vision STEM students. Start your journey to academic excellence today.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="apply.html" class="btn btn-primary">Apply to Vision 30</a>
-                        <a href="contact.html" class="btn btn-secondary">Request Resources</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
                         <img src="Gallery/v30logo.png" alt="Vision 30" class="footer-logo-img">
-                        <span class="footer-logo-text">/span>
                     </div>
                     <p class="footer-description">
                         Empowering blind and low-vision students to excel in STEM fields.
@@ -348,82 +224,14 @@
         </div>
     </footer>
 
-    <!-- AI-Powered Chatbot Widget -->
-    <div class="ai-chatbot-widget" id="ai-chatbot-widget" aria-live="polite">
-        <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Get AI help finding Vision 30 learning resources">
-            <i class="fas fa-robot" aria-hidden="true"></i>
-            <span class="sr-only">Chat with Vision 30 AI Assistant</span>
-        </button>
-        
-        <div class="chatbot-container" id="chatbot-container" role="dialog" aria-labelledby="chatbot-title" aria-hidden="true">
-            <div class="chatbot-header">
-                <h3 id="chatbot-title" class="chatbot-title">
-                    <i class="fas fa-robot" aria-hidden="true"></i>
-                    Vision 30 AI Assistant
-                </h3>
-                <div class="chatbot-status" id="chatbot-status">
-                    <span class="status-indicator online" aria-label="AI assistant is online"></span>
-                    <span class="status-text">Online</span>
-                </div>
-                <button class="chatbot-close" id="chatbot-close" aria-label="Close AI chatbot">
-                    <i class="fas fa-times" aria-hidden="true"></i>
-                </button>
-            </div>
-            
-            <div class="chatbot-messages" id="chatbot-messages" role="log" aria-live="polite" aria-label="Chat conversation with AI assistant">
-                <div class="message bot-message">
-                    <div class="message-avatar">
-                        <i class="fas fa-robot" aria-hidden="true"></i>
-                    </div>
-                    <div class="message-content">
-                        <p>I can help you find the perfect learning resources for your STEM journey! Ask me about assistive technology, curriculum materials, or any other resources you need.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="chatbot-quick-actions">
-                <button class="quick-action-btn" data-action="accessibility" aria-label="Ask about assistive technology">
-                    <i class="fas fa-universal-access" aria-hidden="true"></i>
-                    Assistive Tech
-                </button>
-                <button class="quick-action-btn" data-action="tracks" aria-label="Ask about curriculum">
-                    <i class="fas fa-book-open" aria-hidden="true"></i>
-                    Curriculum
-                </button>
-                <button class="quick-action-btn" data-action="apply" aria-label="Ask about programming resources">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    Programming
-                </button>
-                <button class="quick-action-btn" data-action="eligibility" aria-label="Ask about mentorship">
-                    <i class="fas fa-handshake" aria-hidden="true"></i>
-                    Mentorship
-                </button>
-            </div>
-            
-            <div class="chatbot-input-area">
-                <label for="chatbot-input" class="sr-only">Type your question about resources</label>
-                <input 
-                    type="text" 
-                    id="chatbot-input" 
-                    class="chatbot-input" 
-                    placeholder="Ask about learning resources..."
-                    aria-describedby="chatbot-help-text"
-                    maxlength="500"
-                >
-                <button class="chatbot-send" id="chatbot-send" aria-label="Send message to AI assistant" disabled>
-                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
-                </button>
-                <div id="chatbot-help-text" class="sr-only">
-                    Press Enter to send message or use the send button. Get help finding resources.
-                </div>
-            </div>
-            
-            <div class="chatbot-footer">
-                <span class="powered-by">Powered by AI • <a href="#" class="privacy-link">Privacy Policy</a></span>
-            </div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true
+        });
+    </script>
 </body>
 </html>
