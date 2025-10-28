@@ -357,7 +357,7 @@ section {
 .section-title {
     font-size: var(--font-size-4xl);
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--background-white);
     margin-bottom: var(--spacing-base);
 }
 
@@ -6935,7 +6935,7 @@ body.aos-animate .learning-card:not(.revealed) {
     border-radius: 50px;
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--secondary-color);
+    color:rgb(29, 28, 28);
     margin-bottom: 1.5rem;
 }
 
@@ -8670,6 +8670,8 @@ body.aos-animate .learning-card:not(.revealed) {
 /* Updated Event Page Styles */
 .event-hero {
     padding: var(--spacing-3xl) 0;
+    /* add extra top padding to clear the fixed navbar and increase the visual gap */
+    padding-top: calc(70px + var(--spacing-xl));
     /* New requested hero gradient: primary -> secondary */
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     position: relative;
@@ -8714,6 +8716,14 @@ body.aos-animate .learning-card:not(.revealed) {
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* When a section badge appears inside the dark gradient hero, make it more readable */
+.event-hero .section-badge {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
 
 /* Glass-style event details card for legibility */
