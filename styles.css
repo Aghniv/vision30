@@ -357,7 +357,7 @@ section {
 .section-title {
     font-size: var(--font-size-4xl);
     font-weight: 700;
-    color: var(--background-white);
+    color: black;
     margin-bottom: var(--spacing-base);
 }
 
