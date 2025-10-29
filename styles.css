@@ -457,11 +457,24 @@ section {
 
 .org-logo {
     margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(248, 250, 252, 0.8);
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s ease;
+}
+
+.org-logo:hover {
+    transform: translateY(-3px);
 }
 
 .org-logo img {
-    height: 60px;
+    height: 100px;
     width: auto;
+    object-fit: contain;
+    max-width: 100%;
 }
 
 .org-name {
@@ -7133,21 +7146,30 @@ body.aos-animate .learning-card:not(.revealed) {
 
 .modern-org-logo {
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 120px;
     margin-bottom: 2rem;
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(248, 250, 252, 0.5);
+    background: rgba(248, 250, 252, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-org-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .modern-org-logo img {
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 100px;
     object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .logo-overlay {
